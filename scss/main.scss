@@ -1,12 +1,14 @@
 @import "./reset";
 @import url('https://fonts.googleapis.com/css2? Family= Lato:wght@400;700;900 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2? Family= Roboto:wght@900 & display=swap');
 @import "./variables";
 
 
 body{
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header {
     width: 100%;
@@ -30,8 +32,7 @@ header {
         text-transform: uppercase;
         }
     }
-
-     .main-header{
+    .main-header{
         max-width: 1400px;
         width: 100%;
         height: 73px;
@@ -48,7 +49,7 @@ header {
                 color: rgba(17, 17, 17, 0.85);
             }
 
-            li{
+            a{
                 color: rgba(102, 102, 102, 0.85);
                 font-family: 'Lato';
                 font-size: 18.688px;
@@ -84,4 +85,211 @@ header {
             }
         }
     }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 569px;
+    background-image: url(../imeges/apple.jpg);
+    background-position: center;
+    margin-top: 20px;
+
+    .main-conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 528px;
+        width: 100%;
+        margin-top: 153px;
+
+        .main-pfirst{
+            color: #FFF;
+            font-family: 'Poppins';
+            font-size: 35.13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 56.209px;
+            letter-spacing: 1.23px;
+            text-transform: capitalize;
+        }   
+    
+        h1{ 
+            color: #FFF;
+            text-align: center;
+            font-family: 'Lato';
+            font-size: 82.291px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 83.75px;
+            letter-spacing: 3.615px;
+            text-transform: uppercase;
+        }
+
+        a{
+            max-width: 186px;
+            width: 100%;
+            height: 49px;
+            border-radius: 30px;
+            background: white;
+            padding: 8px;
+            color: #000;
+            text-align: center;
+            font-family: 'Lato';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 33.701px;
+            margin-top: 64px;
+        }
+    }
+}
+
+.purchase-info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 903px;
+    width: 100%;
+    height: 125px;
+    padding: 12px 28px;
+    margin: 42px auto 54px;
+
+    .purchase-info1, .purchase-info2, .purchase-info3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        max-width: 159px;
+        width: 100%;
+        height: 101px;
+
+        a{
+        color: #555;
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        }
+    }
+}
+.products-for-sale{
+    width: 100%;
+    height: 578px;
+    margin-bottom: 106px;
+
+    h3{
+        color: var(--black, #141B12);
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .nav-info-products{
+        display: flex;
+        column-gap: 24px;
+        justify-content: center;
+
+        a{
+            color: #DF6134;
+            text-align: center;
+            font-family: 'Lato';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24.832px; 
+            letter-spacing: 0.466px;
+            text-transform: uppercase;
+            margin: 14px 0px 44px;
+        }
+    }
+
+    .products-sectore{
+        display: flex;
+        align-items: center;
+        column-gap: 66px;
+        max-width: 1402px;
+        width: 100%;
+        height: 459px;
+        margin: auto;
+
+        img{
+            cursor: pointer;
+        }
+        
+        .products{
+            display: flex;
+            column-gap: 46px;
+            max-width: 1270px;
+            width: 100%;
+            height: 459px;
+
+            .product1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 283px;
+                width: 100%;
+                height: 459px;
+
+                h6{
+                    color: #141B12;
+                    font-family: 'Poppins';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 36px;
+                    margin-top: 25px;
+                    }
+
+                .price{
+                    display: flex;
+                    column-gap: 8px;
+                    margin: 13px 0px;
+
+                    .discount, p{
+                        color: #2FA013;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 36px;
+                    }
+
+                    p{
+                        color: #494D48;
+                    }
+                    
+                }
+                .more-detalis{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 7px;
+                    max-width: 160px;
+                    width: 100%;
+                    height: 40px;
+                    padding: 2px 21px;
+                    border-radius: 30px;
+                    background:#FD6F5E;
+
+                    a{
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 36px;
+                    }
+                }
+            }
+
+                
+        }
+    }
+    
 }
